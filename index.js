@@ -2,9 +2,6 @@ const express = require("express");
 const app = express();
 const helmet = require("helmet");
 const router = require("./routes/route")
-const path = require("path");
-const fs = require("fs");
-const chalk = require("chalk");
 const connectDb  = require("./database/db");
 const port = process.env.PORT || 3001;
 
