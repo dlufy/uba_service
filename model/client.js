@@ -8,7 +8,6 @@ const clientSchema = new mongoose.Schema(
     },
     userId :{
       type:String,
-      required:true,
     },
     email: {
         type: String,
@@ -16,7 +15,6 @@ const clientSchema = new mongoose.Schema(
       },
       contact: {
         type: String,
-        required: true,
       },
       company: {
         type: String,

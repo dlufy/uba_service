@@ -8,7 +8,7 @@ const Client = require("../model/client")
    try {
     const resData = await client.save()
     res.send({"message":"all good"})
-   }catch(e){
+   }catch(e) {
       res.send({"message":e})
    }
   }
