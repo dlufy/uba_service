@@ -7,6 +7,7 @@ var router = express.Router()
 router.use(function timeLog (req, res, next) {
   console.log('Time: ', Date.now())
   res.setHeader('Access-Control-Allow-Origin', 'https://felinos.in');
+  res.setHeader('Access-Control-Allow-Origin', 'http://0.0.0.0:3000');
   next()
 })
 
