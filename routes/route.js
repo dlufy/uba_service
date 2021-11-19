@@ -7,7 +7,11 @@ var router = express.Router()
 router.use(function timeLog (req, res, next) {
   console.log('Time: ', Date.now())
   // res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Origin', 'http://0.0.0.0:3000');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('access-control-allow-headers', '*')
+  // res.setHeader('access-control-allow-methods' ,'POST', 'GET', 'OPTIONS', 'DELETE', 'PUT', 'PATCH');
+  res.setHeader('access-control-allow-methods' ,'POST,GET,OPTIONS,DELETE,PUT,PATCH');
+  res.setHeader('content-type', 'application/json');
   next()
 })
 
